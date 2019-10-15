@@ -3,7 +3,7 @@
 <p>As this project is written in the Laravel framework please carry out the following initial steps to get yourself up and running</p>
 
 <ol>
-    <li>Add a .env file to the document root of your environment and fill in the necessary configurations</li>
+    <li>Rename the .env.example file at the document root of your environment and fill in the necessary configurations</li>
     <li>As this application integrates the Google Maps and What3Words Api please ensure you set up the appropriate credentials for each. Once you have done this please add your secret keys to the root .env file in the following format:
         <ul>
             <li>WHAT3WORDS_API_KEY="[WHAT3WORDS_API_KEY]"</li>
