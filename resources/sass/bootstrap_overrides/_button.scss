@@ -1,0 +1,25 @@
+.btn {
+  font-size: 1.4rem;
+}
+
+.btn-primary {
+  background: $nav-third-color;
+}
+
+.btn-success {
+    background: #52C771;
+}
+
+.btn-danger {
+    background: #D55959;
+}
+
+.btn-warning {
+    background: #ffde64;
+    border-color: #ffde64;
+
+    &:hover {
+        background: #ffc108;
+        border-color: #ffc108;
+    }
+}

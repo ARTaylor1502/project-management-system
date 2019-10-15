@@ -1,0 +1,23 @@
+@include donut-chart('#tasks_completed_donut_chart', 40px, 5px, #B8B7B8, 12px);
+@include donut-chart('#task_time_spent_donut_chart', 40px, 5px, #B8B7B8, 12px);
+
+
+#project_statuses_select {
+
+    label {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        padding-top: 0;
+        color: #BAB9BB;
+    }
+}
+
+.amend-list-item {
+    padding: 2.5rem;
+    background: #F8F8F8;
+    border: 1px solid #eee;
+}
+
+.additionals-container {
+    background: #F8F8F8;
+}

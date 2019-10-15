@@ -1,0 +1,44 @@
+input[type='file'] {
+  display: none;
+}
+
+.drag-drop-selector {
+  background: #F8F8F8;
+  color: #338BD6;
+  width: 100%;
+  border: 2px dotted #338BD6;
+  text-align: center;
+  padding: 5rem;
+  cursor: pointer;
+  margin-bottom: 0;
+
+  small {
+    display: block;
+  }
+}
+
+.file-selector {
+  color: $cta-color;
+  border: 2px solid $cta-color;
+  padding: 2.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+
+ &.sm {
+     padding: 1.5rem 1rem;
+ }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &:hover {
+    background: $cta-color;
+    color: #fff;
+  }
+
+  i {
+    float:none;
+  }
+}

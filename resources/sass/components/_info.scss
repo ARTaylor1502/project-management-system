@@ -1,0 +1,23 @@
+.info-container {
+    text-align: center;
+
+    .info-text {
+        font-size: 1.4rem;
+    }
+}
+
+.info-counter-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-counter {
+    font-size: 2.1rem;
+    border: 2px solid #D55959;
+    color: #D55959;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}

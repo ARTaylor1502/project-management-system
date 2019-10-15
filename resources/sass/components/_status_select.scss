@@ -1,0 +1,75 @@
+.status-select {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+
+  &::before,
+  &:after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+  }
+
+  ::before {
+    width: 2em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,.2);
+  }
+
+  &::after {
+    font-family: "Font Awesome 5 Pro";
+    content: "\F078";
+    font-size: 0.625em;
+    line-height: 2.5;
+    right: 1.2em;
+    color: #fff;
+  }
+
+  select {
+    width: 120px;
+    outline: none;
+    color: #fff;
+    border: 0;
+    text-indent: 0.01px;
+    text-overflow: '';
+    appearance: none;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    text-align: center;
+
+    &.enquiry {
+      background-color: #1abc9c;
+    }
+
+    &.active {
+      background-color: #57BC73;
+    }
+
+    &.breakdown {
+      background-color: #D89E28;
+    }
+
+    &.in-approval {
+      background-color: #DA5959;
+    }
+
+    &.closed {
+      background-color: #000;
+    }
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    option {
+      background:#fff;
+      color: #000;
+    }
+  }
+}

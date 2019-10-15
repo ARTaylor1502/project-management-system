@@ -1,0 +1,59 @@
+// Donut Chart Mixin
+.donut-chart {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+
+  .slice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .chart-center {
+    position: absolute;
+    border-radius: 50%;
+
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+@mixin donut-chart($name, $size, $width, $textColor, $textSize) {
+
+  .donut-chart {
+    &#{$name} {
+      width: $size;
+      height: $size;
+      background: #e1e1e1;
+
+    .slice {
+        &.one {
+          clip: rect(0 $size $size/2 0);
+        }
+
+        &.two {
+          clip: rect(0 $size/2 $size 0);
+        }
+      }
+
+      .chart-center {
+        top: $width;
+        left: $width;
+        width: $size - ($width * 2);
+        height: $size - ($width * 2);
+        background: #fff;
+
+        span {
+          font-size: $textSize;
+          line-height: $size - ($width * 2);
+          color: $textColor;
+        }
+      }
+    }
+  }
+} // mixin

@@ -1,0 +1,55 @@
+.card {
+  .actions {
+    i {
+      cursor: pointer;
+    }
+  }
+}
+
+.card-header {
+  background: #fff;
+  margin-bottom: 0;
+  padding: 2rem;
+
+    .avatar, .avatar-placeholder {
+        border: 1px solid #eee;
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.details-card {
+  .card-header, .card-body {
+    background: $darker;
+    padding: 1.5rem;
+
+    i {
+      float: none;
+    }
+  }
+}
+
+.summary {
+    padding: 2rem;
+    background: #eee;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+}
+
+.summary-card {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+
+      i {
+        margin-right: 1rem;
+        width: 2rem;
+        text-align: center;
+      }
+    }
+  }
+}

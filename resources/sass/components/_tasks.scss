@@ -1,0 +1,45 @@
+.tasks{
+    .task {
+        .task-name {
+            display: inline-block;
+
+            .subtitle{
+                font-size: 1.2rem;
+                color: #989898;
+            }
+        }
+
+        .due-date {
+            &.due {
+                color: #B5B5B6;
+            }
+
+            &.overdue {
+                color: #D35663;
+            }
+        }
+
+        .completion-date {
+            color: #57BC71;
+        }
+
+        .right-container {
+            justify-content: flex-end
+        }
+
+        .edit {
+            button {
+                padding: 0.25rem 1rem;
+            }
+        }
+
+        .avatar {
+            width: 2.5rem;
+            height: 2.5rem;
+
+            i {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

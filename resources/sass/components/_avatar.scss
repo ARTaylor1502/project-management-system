@@ -1,0 +1,65 @@
+.users-container {
+    display: flex;
+    position: relative;
+
+    &.children-1 {
+        right: 65px;
+    }
+
+    &.children-2 {
+        right: 35px;
+    }
+
+    &.children-3 {
+        right: 10px;
+    }
+
+    &.children-4 {
+        right: -15px;
+    }
+
+    .avatar, .avatar-placeholder {
+        border: 1px solid #eee;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .user-logo-container {
+        border: 1px solid #eee;
+        background: $nav-third-color;
+        position: relative;
+
+        &:nth-child(1) {
+            z-index: 10;
+        }
+
+        &:nth-child(2) {
+            right: 5px;
+            z-index: 20;
+        }
+
+        &:nth-child(3) {
+            right: 10px;
+            z-index: 30;
+        }
+    }
+}
+
+.remaining-users-amount {
+    background: #B8B9B9;
+    z-index: 60;
+    color: #fff;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.avatar, .avatar-placeholder {
+    &.sm {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}

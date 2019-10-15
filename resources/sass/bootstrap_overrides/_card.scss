@@ -1,0 +1,37 @@
+.card {
+  break-inside: avoid-column;
+  margin-bottom: 1.5rem;
+  border-width: 0;
+  border-radius: 0.5rem;
+  display: block;
+  flex-direction: initial;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.1);
+
+  .card-header, .card-body, .card-footer {
+    padding: 2rem;
+    background: #fff;
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+  }
+
+  .card-footer {
+    background: none;
+    border-radius: 0 0 5px 5px;
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .card-footer-dark {
+    background: $card-footer;
+    color: #fff;
+  }
+}
+
+.card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 0;
+}

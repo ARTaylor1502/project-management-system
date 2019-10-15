@@ -1,0 +1,90 @@
+.pill-button {
+    display: inline-block;
+    padding: 0;
+    font-size: 1.2rem;
+
+    &:hover .left-section {
+        background: $cta-color;
+        color: #fff;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    .left-section, .right-section {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .left-section {
+        border: 1px solid $cta-color;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: #fff;
+        color: $cta-color;
+    }
+
+    .right-section {
+        border: 1px solid $cta-color;
+        background: $cta-color;
+        color: #fff;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+.pill-search-container {
+    label {
+        color:  $cta-color;;
+    }
+
+    .pill-search {
+        padding: 0;
+        font-size: 1.2rem;
+        display: block;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        .left-section, .right-section {
+            padding: 0.5rem 0.75rem;
+        }
+
+        .left-section {
+            border: 1px solid $cta-color;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background: #fff;
+
+            &:focus {
+                box-shadow: none;
+                outline: 0;
+            }
+        }
+
+        .right-section {
+            border: 2px solid $cta-color;
+            background: $cta-color;
+            color: #fff;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+.primary-custom {
+  border: 2px solid #4293D8;
+  color: #4293D8;
+  background: #fff;
+}
+
+.box-button {
+  min-height: 250px;
+}
+
+.btn-delete {
+    background: #B9B9B9;
+    color: #fff;
+}

@@ -1,0 +1,67 @@
+.tabs-row {
+  margin-top: 3rem;
+}
+
+.tabs {
+  margin-bottom: 1.5rem;
+
+  ul.tab-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: inline-block;
+
+    li.tab-header {
+      display: inline-block;
+
+      &.is-active {
+        a, span:not(.badge) {
+          color: $cta-color;
+          border-bottom: 2px solid $cta-color;
+        }
+      }
+
+      &:last-of-type {
+        margin-right: 1.5rem;
+      }
+
+      a, span {
+        color: #000;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+      }
+
+      span.badge {
+        background: #B9B9B9;
+        color: #fff;
+        padding: 0.2rem 0.5rem;
+        border-radius: 1.5rem;
+      }
+    }
+  }
+}
+
+.subtabs {
+  padding: 2rem;
+  margin-bottom: 0;
+  background: #F8F8F8;
+}
+
+.tab-details {
+  h3 {
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  button.primary-custom {
+    border: 2px solid $cta-color;
+    color: $cta-color;
+    display: block;
+    width: 100%;
+
+    &:hover {
+      background: $cta-color;
+      color: #fff;
+    }
+  }
+}

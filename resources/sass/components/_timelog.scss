@@ -1,0 +1,12 @@
+.timelog {
+    border: 1px solid #F1F1F1;
+    background: #F8F8F8;
+    padding: 1rem;
+
+    .timelog-user-container {
+        .avatar, .avatar-placeholder {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}

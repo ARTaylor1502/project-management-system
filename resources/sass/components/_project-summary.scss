@@ -1,0 +1,101 @@
+.project{
+    .card-header {
+        padding-bottom: 0;
+        border: none;
+    }
+
+    .card-body {
+        padding-top: 0.5rem;
+
+        h2, h3, h4 {
+            margin-bottom: 0;
+        }
+    }
+
+    .status-container {
+        position: relative;
+        padding: 0.75rem 1.5rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            transform: translateY(-50%);
+            border-top: 1px solid #EBEBEC;
+        }
+
+        .status-inner-container {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            position: relative;
+
+            .status {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                padding: 0.25rem 0.75rem;
+                border-radius: 1rem;
+            }
+
+            .avatar, .avatar-placeholder, .remaining-users-amount {
+                border: 1px solid #eee;
+                width: 3.5rem;
+                height: 3.5rem;
+                position: absolute;
+            }
+
+            .has-additional-users {
+                margin-right: 2rem;
+            }
+
+            .users-container {
+                display: flex;
+                right: 3rem;
+                position: absolute;
+                height: 3.5rem;
+
+                .user-logo-container {
+                    border: 1px solid #eee;
+                    background: $nav-third-color;
+
+                    &:nth-child(1) {
+                        right: -30px;
+                        z-index: 50;
+                    }
+
+                    &:nth-child(2) {
+                        right: -5px;
+                        z-index: 40;
+                    }
+
+                    &:nth-child(3) {
+                        right: 20px;
+                        z-index: 30;
+                    }
+                }
+            }
+
+            .remaining-users-amount {
+                display: flex;
+                right: 0;
+                position: absolute;
+                background: #B8B9B9;
+                z-index: 60;
+                color: #fff;
+            }
+        }
+    }
+
+    .card-footer {
+        border-top: none;
+        padding-bottom: 2.5rem;
+
+        h4 {
+            i {
+                margin-right: 1rem;
+            }
+        }
+    }
+}

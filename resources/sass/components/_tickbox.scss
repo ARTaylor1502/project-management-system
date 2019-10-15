@@ -1,0 +1,40 @@
+.tick-box-container {
+    cursor: pointer;
+
+    &.completed {
+        cursor: initial;
+
+        .tick-base {
+            .tick-overlay {
+                opacity: 1;
+            }
+        }
+    }
+
+    .tick-base {
+        color: transparent;
+        position: relative;
+        background: #fff;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #D2D2D2;
+
+        .tick-overlay {
+            opacity: 0;
+            background: #57BC71;
+            color: #fff;
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            line-height: 15px;
+            font-size: 1rem;
+        }
+    }
+
+    &:hover .tick-overlay, &:active .tick-overlay, &:focus .tick-overlay {
+        opacity: 1;
+    }
+}

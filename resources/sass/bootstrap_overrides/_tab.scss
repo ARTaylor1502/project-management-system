@@ -1,0 +1,23 @@
+.nav-tabs {
+  border:none;
+  margin-bottom: 1.5rem;
+
+  .nav-link {
+    color: $nav-third-color;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid transparent;
+
+    &.active, &:hover {
+      border-bottom: 2px solid $cta-color;
+      background-color:initial;
+      color: $cta-color;
+    }
+  }
+}
+
+.tab-content {
+  margin-top: .75rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,32 @@
+.quantity-selector-container {
+
+  .quantity-control {
+    border: 1px solid #ced4da;
+    padding: 0.3rem 0.75rem;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    width: 50%;
+    height: 3.5rem;
+    align-items: center;
+    vertical-align: middle;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background: $cta-color;
+      color: #fff;
+    }
+  }
+
+  .quantity-down {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .quantity-up {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

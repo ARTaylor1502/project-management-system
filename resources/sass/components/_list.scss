@@ -1,0 +1,155 @@
+.list {
+  padding-left: 0;
+  list-style-type: none;
+
+  + button.primary-custom {
+    display: block;
+    width: 100%;
+  }
+
+    .list-icon {
+        width: 20px;
+        text-align: center;
+    }
+
+    .title {
+        color: #9A9A9A;
+    }
+
+  .list-item {
+    background: #F8F8F8;
+    border: 1px solid #E2E2E2;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    overflow:auto;
+
+    &:hover .edit {
+        visibility: visible;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .edit {
+        visibility: hidden;
+    }
+
+    .icon {
+      margin-right: 1rem;
+    }
+
+    span {
+      align-items: center;
+      display: flex;
+    }
+
+    .item-toggle {
+      width: 40px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .list-highlighted-item {
+      color: #6BCE86;
+    }
+
+    .quantity {
+      margin-left: 0.5rem;
+    }
+
+    .remove-item {
+      cursor: pointer;
+      color: $remove-color;
+    }
+
+    .right-container {
+      margin-left: auto;
+      justify-content: flex-end;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .cta-item {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+.scrollable-list {
+    max-height: 300px;
+    overflow: auto;
+}
+
+.list-container {
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.subtask-list {
+    list-style-type: none;
+}
+
+li.completed {
+    text-decoration: line-through;
+}
+
+.list-header {
+  background: #fff;
+  padding: 2.5rem;
+
+  h3 {
+    margin-bottom: 0;
+
+    .badge {
+      background: #B9B9B9;
+      color: #fff;
+      padding: 0.2rem 0.5rem;
+      border-radius: 1.5rem;
+    }
+  }
+}
+
+.list-group-striped {
+  .list-group-item {
+    border: none;
+
+    .cta-container {
+      background: #F8F8F8;
+      border: 1px solid #E7E7E7;
+      padding: 2rem;
+
+      a {
+        display: block;
+        color: #4394D9;
+      }
+    }
+
+    .description-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      textarea {
+        height: 100%;
+      }
+    }
+  }
+
+  .list-group-item:nth-of-type(odd) {
+    background: #fff;
+
+    .cta-container {
+      background: #F8F8F8;
+    }
+  }
+
+  .list-group-item:nth-of-type(even) {
+    background: #F8F8F8;
+
+    .cta-container {
+      background: #fff;
+    }
+  }
+}

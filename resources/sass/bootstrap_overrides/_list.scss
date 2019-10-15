@@ -1,0 +1,30 @@
+.list-group {
+  margin-bottom: 1.5rem;
+
+  .list-group-item {
+    padding: 2.5rem;
+
+    &.list-sm {
+      padding: 1rem;
+    }
+
+    .row {
+      margin-bottom: 2.5rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    i {
+      cursor: pointer;
+    }
+  }
+}
+
+.error-list {
+  margin-top: 1.5rem;
+  padding-left: 0;
+  list-style-type: none;
+  color: $remove-color;
+}

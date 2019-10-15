@@ -1,0 +1,57 @@
+.form-group {
+  margin-bottom: 2.5rem;
+
+  input[type=checkbox] {
+    display: block;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .3rem .75rem;
+  font-size: $default-font-size;
+  color: #636c72;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+}
+
+.form-control, select.form-control:not([size]):not([multiple]), .custom-file, .custom-file-label {
+  height: 3.5rem;
+}
+
+.form-check {
+  margin-bottom: 1.5rem;
+}
+
+.form-check-label {
+  margin-left: 1.5rem;
+}
+
+.custom-file-label, .custom-file-label::after {
+  line-height: 2;
+}
+
+.custom-file-label::after {
+  height: 38px;
+}
+
+.input-group-text {
+  font-size: 1.6rem;
+}
+
+.input-group {
+  .cta {
+    background: $nav-third-color;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+  }
+}

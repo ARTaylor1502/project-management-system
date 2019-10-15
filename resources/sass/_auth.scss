@@ -1,0 +1,96 @@
+.auth-page {
+  color: #212529;
+
+  .full-screen-bg {
+    background-color: rgba(41,65,94,.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #background_img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      z-index: -1000;
+    }
+
+    .auth-container {
+      z-index:100;
+
+      img#logo {
+        height: 80px;
+        max-width: 100%;
+        margin: 0 auto 30px auto;
+      }
+
+      #device_icons {
+        height:100px;
+        display:block;
+        margin:50px auto;
+      }
+
+      .card {
+        .card-body {
+          h1 {
+            font-size: 2.8rem;
+            font-weight: 400;
+          }
+
+          label {
+            font-size:1.6rem;
+          }
+
+          input#email, input#password {
+            border-color:#ffc107;
+          }
+        }
+      }
+
+      #forgot_password {
+        color:#fff;
+        font-size:1.4rem;
+      }
+    }
+  }
+
+  .footer-block {
+    position:fixed;
+    left:0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-bottom:20px;
+
+    img#footer_icons {
+      height: 120px;
+      display:block;
+      margin:0 auto 30px auto;
+    }
+
+    img#formation_footer {
+      height: 20px;
+      display:block;
+      margin:0 auto;
+    }
+  }
+}
+
+/*IE FIX*/
+
+.full-screen-bg {
+  .container {
+    margin:0;
+  }
+}
